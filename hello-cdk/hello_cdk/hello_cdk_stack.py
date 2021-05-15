@@ -51,7 +51,7 @@ class HelloCdkStack(cdk.Stack):
                     effect= iam.Effect.ALLOW
                     )
 
-        token = cdk.SecretValue.plain_text("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")
+        token = cdk.SecretValue.plain_text("")#github personal token
 
         amplify_app = amp.App(self, "MyApp",
             source_code_provider=amp.GitHubSourceCodeProvider(
